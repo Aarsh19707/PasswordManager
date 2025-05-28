@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Password Strength Checker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <h1>PASSWORD MANAGER</h1>
+      <ul>
+        <li><a href="initialize.html">Initialize Vault</a></li>
+        <li><a href="add.html">Add Password</a></li>
+        <li><a href="retrieve.html">Retrieve Password</a></li>
+        <li><a href="generate.html">Generate Password</a></li>
+        <li><a href="strength.html">Password Strength Checker</a></li>
+      </ul>
+    </nav>
+
+    <div class="center-wrapper">
+      <div class="inputBOX">
+        <div>
+          <h2>🛡 Password Strength Checker</h2>
+          <input
+            type="password"
+            id="passwordToCheck"
+            placeholder="Enter Password to Check"
+          />
+          <button onclick="checkStrength()">Check Strength</button>
+          <p id="strengthResult"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
